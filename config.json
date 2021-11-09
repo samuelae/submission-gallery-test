@@ -1,13 +1,13 @@
 {
   "input": "./gallery",
   "output": "./build_output",
-  "title": "Photo Gallery",
+  "title": "Submission Gallery Test",
   "sort-albums-by": "title",
   "sort-media-by": "filename",
   "download-photos": "copy",
   "cleanup": true,
-  "theme": "cards",
+  "theme": "flow",
   "theme-style": "./custom.css",
-  "footer": "Copyright Text",
+  "footer": "All submissions are published under the CC by 4.0 Licence. Please always mention the submission author when using their visualizations.",
   "usage-stats": false
 }
