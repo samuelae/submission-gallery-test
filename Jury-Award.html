@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Submission Gallery Test - Jury Award</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/lightslider/css/lightslider.min.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+      <link rel="stylesheet" href="public/justifiedgallery/justifiedGallery.min.css" />
+  </head>
+
+  <body>
+    
+    <div id="container">
+    
+      <!--
+        Gallery title
+      -->
+      <header>
+        <h1><a href="index.html">Submission Gallery Test</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="Jury-Award.html">Jury Award</a>
+      </nav>
+    
+    
+      <!--
+        Nested albums, if any
+      -->
+      <div id="albums" class="justified-gallery">
+      </div>
+    
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix justified-gallery">
+          
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/Jury%20Award/maxsize.png"data-src="media/large/Jury%20Award/maxsize.png"data-exthumbimage="media/thumbs/Jury%20Award/maxsize.png"data-filename="maxsize.png"><a href="media/large/Jury%20Award/maxsize.png"><img
+                      src="media/small/Jury%20Award/maxsize.png"
+                      width="300"
+                      height="300"alt="maxsize.png"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/Jury%20Award/portrait.jpg"data-src="media/large/Jury%20Award/portrait.jpg"data-exthumbimage="media/thumbs/Jury%20Award/portrait.jpg"data-filename="portrait.jpg"><a href="media/large/Jury%20Award/portrait.jpg"><img
+                      src="media/small/Jury%20Award/portrait.jpg"
+                      width="180"
+                      height="300"alt="portrait.jpg"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/Jury%20Award/reasonable.png"data-src="media/large/Jury%20Award/reasonable.png"data-exthumbimage="media/thumbs/Jury%20Award/reasonable.png"data-filename="reasonable.png"><a href="media/large/Jury%20Award/reasonable.png"><img
+                      src="media/small/Jury%20Award/reasonable.png"
+                      width="375"
+                      height="300"alt="reasonable.png"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/Jury%20Award/square.jpg"data-src="media/large/Jury%20Award/square.jpg"data-exthumbimage="media/thumbs/Jury%20Award/square.jpg"data-filename="square.jpg"><a href="media/large/Jury%20Award/square.jpg"><img
+                      src="media/small/Jury%20Award/square.jpg"
+                      width="300"
+                      height="300"alt="square.jpg"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/Jury%20Award/tall.png"data-src="media/large/Jury%20Award/tall.png"data-exthumbimage="media/thumbs/Jury%20Award/tall.png"data-filename="tall.png"><a href="media/large/Jury%20Award/tall.png"><img
+                      src="media/small/Jury%20Award/tall.png"
+                      width="112.5"
+                      height="300"alt="tall.png"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/Jury%20Award/wide.png"data-src="media/large/Jury%20Award/wide.png"data-exthumbimage="media/thumbs/Jury%20Award/wide.png"data-filename="wide.png"><a href="media/large/Jury%20Award/wide.png"><img
+                      src="media/small/Jury%20Award/wide.png"
+                      width="768"
+                      height="300"alt="wide.png"/>
+              </a>
+          
+          </div>  </ul>
+    
+      <!--
+        Pagination
+      -->
+    
+      <!--
+        Zip file link
+      -->
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <p>All submissions are published under the CC by 4.0 Licence. Please always mention the submission author when using their visualizations.</p>
+      </footer>
+    
+    </div>
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightslider/js/lightslider.min.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+    <script src="public/justifiedgallery/jquery.justifiedGallery.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true,
+          exThumbImage: 'data-exthumbimage',
+        });
+
+        // Init justified gallery for albums
+        $("#albums").justifiedGallery({
+          margins: 10,
+          rowHeight: 300,
+          maxRowHeight: 325,
+        });
+
+        // Init justified gallery for photos
+        $("#media").justifiedGallery({
+          selector: '.albumList',
+          waitThumbnailsLoad: false,
+          margins: 10,
+          rowHeight: 250,
+          maxRowHeight: 275,
+        });
+      });
+    </script>
+
+
+
+  </body>
+
+</html>
